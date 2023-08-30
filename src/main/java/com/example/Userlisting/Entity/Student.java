@@ -8,17 +8,22 @@ public class Student {
 
     @Id
     private String _id;
-    private String studentname;
-    private String studentaddress;
+    private String firstname;
+    private String lastname;
+    private String address;
     private String mobile;
 
+    private int a;
 
-    public Student(String _id, String studentname, String studentaddress, String mobile) {
+
+    public Student(String _id, String firstname, String lastname,String address, String mobile) {
         this._id = _id;
-        this.studentname = studentname;
-        this.studentaddress = studentaddress;
+        this.firstname = firstname;
+        this.lastname=lastname;
+        this.address = address;
         this.mobile = mobile;
     }
+//    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
 
 
     public Student() {
@@ -32,20 +37,30 @@ public class Student {
         this._id = _id;
     }
 
-    public String getStudentname() {
-        return studentname;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setStudentname(String studentname) {
-        this.studentname = studentname;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getStudentaddress() {
-        return studentaddress;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setStudentaddress(String studentaddress) {
-        this.studentaddress = studentaddress;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public String getMobile() {
@@ -60,8 +75,9 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "_id='" + _id + '\'' +
-                ", studentname='" + studentname + '\'' +
-                ", studentaddress='" + studentaddress + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname'" + lastname + '\'' +
+                ", address='" + address + '\'' +
                 ", mobile='" + mobile + '\'' +
                 '}';
     }
