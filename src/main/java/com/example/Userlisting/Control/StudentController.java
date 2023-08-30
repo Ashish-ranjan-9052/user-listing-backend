@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*")
 @RequestMapping("api/v1/student")
 public class StudentController {
-//mmm
+
     @Autowired
     private StudentServices studentServices;
 
